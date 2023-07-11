@@ -1,12 +1,13 @@
 import './App.css'
-import Test from './test'
+import Test from './components/test'
 import reactIMG from './assets/react.svg'
+import Login from './components/Login'
 
 const App: React.FC = () => {
 
   return (
     <>
-      <div className="card">
+      {/* <div className="card"> */}
         {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button> */}
@@ -17,10 +18,12 @@ const App: React.FC = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      </div>
+      {/* </div> */}
       <Test imageSrc={reactIMG}/>
       <Test imageSrc={'https://www.svgrepo.com/show/513696/banana.svg'}/>
       <Test imageSrc={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png'}/>
+      {/* <Login /> */}
+
     </>
   )
 }
